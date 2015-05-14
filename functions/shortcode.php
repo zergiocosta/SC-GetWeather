@@ -10,7 +10,7 @@
                 endif;
             endforeach;
         ?>
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/tempo/<?php echo $icon_ssa; ?>" id='icon2' />
+        <img src="<?php plugin_dir_path( __FILE__ ); ?>/assets/img/<?php echo $icon_ssa; ?>" id='icon2' />
     </div>
     <div class="col-xs-7">
         <select id="selectCities">
@@ -37,7 +37,7 @@ jQuery(document).ready(function() {
     jQuery('#selectCities').change(function(){
         var selectedValue = this.value;
         var valueArray = selectedValue.split(',');
-        var image = "<?php bloginfo('template_url'); ?>/assets/img/tempo/";
+        var image = "<?php plugin_dir_path( __FILE__ ); ?>/assets/img/";
         jQuery('#temp2-min').html(valueArray[0]);
         jQuery('#temp2-max').html(valueArray[1]);
         jQuery('#icon2').attr('src',image+valueArray[2]);
