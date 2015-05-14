@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Jorge
- * Date: 04/05/2015
- * Time: 15:14
- */
 
 class Weather {
 
